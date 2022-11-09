@@ -25,22 +25,44 @@ public class ReferenceTypeExample {
 		
 		//주의사항
 		
-		int[] scoreList;
+		int[] scoreList = null;
 		scoreList = new int[] {83, 90, 87};
 		
-		//클래스
-//		User user = new User();
-//		user.name = "홍길동";
-//		user.age = 25;
-//		user.height = 175.7;
+		sum = 0;
+		for(int i=0; i<3; i++) {
+			sum = sum + scoreList[i];
+		}
+		System.out.println("총합 : " + sum);
+		sum = add(new int[] {83, 90, 87});
 		
-//		let user = {
-//				name : '홍길동',
-//				age : 25,
-//				height : 175.7
+		
+		//new 연산자로 배열 생성
+		int[] array = new int[3]; 
+		for(int i=0; i<3; i++) {
+			System.out.println("array["+i+"] : + array[i]");
+		}
+		
+		String[] strAry = new String[4];
+		for(int i=0; i<strAry.length; i++) {
+			strAry[i] = String.valueOf(i);
+		}
+		for(int i=0; i<strAry.length; i++) {
+		System.out.println("strAry["+i+"] : + " + strAry[i]);
+		}
+		
+		
+//		int add(int[] numList) {
+//			int sum = 0;
+//			for(int i=0; i<numList; )
 //		}
-				
+	}
 
+	private static int add(int[] numList) {
+		int sum = 0;
+		for(int i =0; i < numList.length; i++) {
+			sum += numList[i];
+		}
+		return sum;
 	}
 
 }
