@@ -48,7 +48,7 @@ public class Exam05 {
 					if (min > scores[i]) {
 						min = scores[i];
 					}
-					
+				
 					sum += scores[i];
 				}System.out.println("학생 수 > ");
 				System.out.println("최고점수 : " + max);

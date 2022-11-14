@@ -10,6 +10,8 @@ public class ObesityInfo extends StandardWeightInfo {
 	
 	public void getInformation() {
 		System.out.println("이름 : " + name + "키 : " + height + "몸무게 : " + weight + "비만도 : " + getObesity() );
+	} else {
+		System.out.println(name + "님의" + "신장 : " + height + "몸무게 : " + weight + ", " + "비만");
 	}
 	
 	 public double getObesity() {
